@@ -6,6 +6,6 @@ with uniform translational and rotational characteristics.
 This solution is implemented in C#, but this solution uses CUDA C++ to implement parallelization on the GPU.
 
 ## Instruction:
-Download and install Visual Studio 2019 or higher;
-Download and install the CUDA Toolkit 11.0 or newer;
-Launch CntGPU7.sln.
+*     Download and install Visual Studio 2019 or higher;
+*     Download and install the CUDA Toolkit 11.0 or newer;
+*     Launch CntGPU7.sln.
