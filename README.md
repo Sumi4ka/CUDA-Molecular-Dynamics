@@ -8,4 +8,5 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
 ## Instruction:
 - Download and install Visual Studio 2019 or higher;
 - Download and install the CUDA Toolkit 11.0 or newer;
-- Launch CntGPU7.sln.
+- Launch CntGPU7.sln;
+- In "Data\" directory there are two files such as Fullerene.txt and Nanotube.txt
