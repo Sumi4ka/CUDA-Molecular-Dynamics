@@ -1,0 +1,18 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\sazhe\source\repos\CntGPU7\CudaRuntime6>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\Users\sazhe\source\repos\CntGPU7\CudaRuntime6\x64\Debug\kernel.cu.obj "C:\Users\sazhe\source\repos\CntGPU7\CudaRuntime6\kernel.cu" 
+C:\Users\sazhe\source\repos\CntGPU7\CudaRuntime6\kernel.cu(68): warning #177-D: variable "x1" was declared but never referenced
+        double x1, y1;
+               ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\sazhe\source\repos\CntGPU7\CudaRuntime6\kernel.cu(68): warning #177-D: variable "y1" was declared but never referenced
+        double x1, y1;
+                   ^
+  
+  kernel.cu
+  tmpxft_0000685c_00000000-7_kernel.cudafe1.cpp
+     Создается библиотека C:\Users\sazhe\source\repos\CntGPU7\x64\Debug\CudaRuntime6.lib и объект C:\Users\sazhe\source\repos\CntGPU7\x64\Debug\CudaRuntime6.exp
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+  CudaRuntime6.vcxproj -> C:\Users\sazhe\source\repos\CntGPU7\x64\Debug\CudaRuntime6.exe
