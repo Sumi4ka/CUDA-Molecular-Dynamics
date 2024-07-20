@@ -10,3 +10,7 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
 - Download and install the CUDA Toolkit 11.0 or newer;
 - Launch CntGPU7.sln;
 - In "Data\" directory there are two files such as Fullerene.txt and Nanotube.txt. In ReadData function you need to select file name.
+- in main function you need to configure calculation characteristic:
+  -- T - count of iterations
+  -- dt - step of time
+  -- Data of Molecules
