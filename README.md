@@ -12,11 +12,11 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
 
 
 ## Instruction:
-- Download and install Visual Studio 2019 or higher;
+- Download and install Visual Studio 2019 or higher (or install gcc and g++);
 - Download and install the CUDA Toolkit 11.0 or newer;
 - How to Compile and Run the Program
   To compile all files and run the program, execute the following command in the terminal:
 
   ```bash
   bash Compile_script.sh
-
+- Or work with VS
