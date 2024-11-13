@@ -8,12 +8,11 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
 ## Instruction:
 - Download and install Visual Studio 2019 or higher;
 - Download and install the CUDA Toolkit 11.0 or newer;
-- ## How to Compile and Run the Program
+- How to Compile and Run the Program
+  To compile all files and run the program, execute the following command in the terminal:
 
-To compile all files and run the program, execute the following command in the terminal:
-
-```bash
-bash Compile_script.sh
+  ```bash
+  bash Compile_script.sh
 
 - In "Data\" directory there are two files such as Fullerene.txt and Nanotube.txt. In ReadData function you need to select file name.
 - in main function you need to configure calculation characteristic:
