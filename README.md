@@ -5,6 +5,12 @@ A feature of the solution is the consideration of the structure as an integral b
 with uniform translational and rotational characteristics.
 This solution is implemented in C#, but this solution uses CUDA C++ to implement parallelization on the GPU.
 
+- In "Data\" directory there are two files such as Fullerene.txt and Nanotube.txt. In ReadData function you need to select file name.
+- "Results\" directory will store the obtained data of the trajectories of the molecules
+- In the file "Description.txt " the initial data for the calculation is stored. They are recorded in a human readable form. The program parses this file, so the TABULATION in the file must be strictly adhered to.
+- By default, the program parses the "Description.txt" file, but you can add a command-line argument to run the program as a path to the .txt file.
+
+
 ## Instruction:
 - Download and install Visual Studio 2019 or higher;
 - Download and install the CUDA Toolkit 11.0 or newer;
@@ -14,8 +20,3 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
   ```bash
   bash Compile_script.sh
 
-- In "Data\" directory there are two files such as Fullerene.txt and Nanotube.txt. In ReadData function you need to select file name.
-- in main function you need to configure calculation characteristic:
-  - T - count of iterations
-  - dt - step of time
-  - Data of Molecules
