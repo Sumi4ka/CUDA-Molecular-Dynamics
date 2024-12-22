@@ -16,5 +16,5 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
 ## Instruction:
 - The program requires: C++17 standart or newer, CUDA Toolkit 11.0 or newer
 - To compile all file: run compile.bat
-- To run the program: run DescriptinScrpt.bat or any else
+- To run the program: run DescriptinScript.bat or any else
 - Or work with VS
