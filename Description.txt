@@ -1,0 +1,22 @@
+Description:
+Folder: results2Nanotube
+N: 2
+NT: 6000
+dt: 0.0001
+Molecules:
+
+NameStructure: Nanotube
+SpatialCoordinates:
+2.5 1.0 0.0
+Velocity:
+-43.9659525 0.0 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+-2.5 -1.0 0.0
+Velocity:
+43.9659525 0.0 0.0
+AngularVelocity:
+0.0 0.0 1300.0

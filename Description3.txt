@@ -1,0 +1,70 @@
+Description:
+Folder: results8Nanotube
+N: 8
+NT: 6000
+dt: 0.0001
+Molecules:
+
+NameStructure: Nanotube
+SpatialCoordinates:
+2.5 1.0 0.0
+Velocity:
+-24.0 0.0 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+-2.5 -1.0 0.0
+Velocity:
+24.0 0.0 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+-1.0 2.5 0.0
+Velocity:
+0.0 -24.0 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+1.0 -2.5 0.0
+Velocity:
+0.0 24.0 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+1.060660 2.474874 0.0
+Velocity:
+-16.970562 -16.970562 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+2.474874 -1.060660 0.0
+Velocity:
+-16.970562 16.970562 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+-2.474874 1.060660 0.0
+Velocity:
+16.970562 -16.970562 0.0
+AngularVelocity:
+0.0 0.0 1300.0
+
+NameStructure: Nanotube
+Spatialcoordinates:
+-1.060660 -2.474874 0.0
+Velocity:
+16.970562 16.970562 0.0
+AngularVelocity:
+0.0 0.0 1300.0
