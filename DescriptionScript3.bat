@@ -1,3 +1,3 @@
 cd /d "%~dp0\build"
 cd /build
-cudaMD Description3.txt
+CUDA_MD Description3.txt

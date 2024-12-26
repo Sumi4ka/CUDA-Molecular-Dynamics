@@ -5,6 +5,7 @@
 #include <fstream>
 #include <math.h>
 #include <vector>
+
 #include <iostream>
 #include "cuda_runtime.h"
 

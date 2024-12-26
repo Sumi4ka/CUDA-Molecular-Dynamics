@@ -1,7 +1,7 @@
 #include "solver.cuh"
 void Solver::Description()
 {
-    printf("Description\n\n");
+    printf("\nDescription\n\n");
     printf("Count of Molecules: %i\n",N);
     printf("Count of Time Iterations: %i\n", NT);
     printf("Time Step: %f\n\n", dt);
@@ -82,7 +82,7 @@ Solver::Solver(std::string DataFile, bool GPU)
         }
     }
     catch (const std::filesystem::filesystem_error& e) {
-        std::cerr << "Îøèáêà: " << e.what() << std::endl;
+        std::cerr << "Error: " << e.what() << std::endl;
     }
     for (int i = 0; i < N; i++) molecules[i]->getC(xC, yC, zC);
     is.close();
@@ -107,6 +107,8 @@ Solver::~Solver()
 }
 void Solver::Solve()
 {
+    printf("Start the calculation?\n");
+    std::cin.get();
     printf("Calculation begin...\n");
     //Solver
     for (int i = 0; i < N; i++)

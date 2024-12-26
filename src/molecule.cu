@@ -2,6 +2,7 @@
 void Molecule::Description()
 {
     printf("Molecule name: %s\n", name.c_str());
+    printf("Structure name: %s\n", nameStructure.c_str());
     printf("x: %f, y: %f, z: %f\n", xM, yM, zM);
     printf("u: %f, v: %f, w: %f\n", uM, vM, wM);
     printf("omegaX: %f, omegaY: %f, omegaZ: %f\n", omegaX, omegaY, omegaZ);

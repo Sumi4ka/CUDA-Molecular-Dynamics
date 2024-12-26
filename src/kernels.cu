@@ -75,16 +75,51 @@ __global__ void atomCalculateFLJ(float* d_xC, float* d_yC, float* d_zC, float* U
             __syncthreads();
         }
     }
-    if (threadIdx.x < 3) { UVW[threadIdx.x] = 0.f; Lxyz[threadIdx.x] = 0.f; }
-    __syncthreads();
-    if (threadIdx.x < M)
+    //instead of sharedUVW we used xS yS zS 
+    __shared__ float sharedLxyz0[256];
+    __shared__ float sharedLxyz1[256];
+    __shared__ float sharedLxyz2[256];
+    if (i < M)
     {
-        atomicAdd(&UVW[0], FLJx);
-        atomicAdd(&UVW[1], FLJy);
-        atomicAdd(&UVW[2], FLJz);
-        atomicAdd(&Lxyz[0], y * FLJz - z * FLJy);
-        atomicAdd(&Lxyz[1], z * FLJx - x * FLJz);
-        atomicAdd(&Lxyz[2], x * FLJy - y * FLJx);
+        xS[i] = FLJx;
+        yS[i] = FLJy;
+        zS[i] = FLJz;
+        sharedLxyz0[i] = y * FLJz - z * FLJy;
+        sharedLxyz1[i] = z * FLJx - x * FLJz;
+        sharedLxyz2[i] = x * FLJy - y * FLJx;
+    }
+    else
+    {
+        xS[i] = 0.0;
+        yS[i] = 0.0;
+        zS[i] = 0.0;
+        sharedLxyz0[i] = 0.0;
+        sharedLxyz1[i] = 0.0;
+        sharedLxyz2[i] = 0.0;
+    }
+    __syncthreads();
+    // Редукция внутри блока
+    for (int stride = blockDim.x / 2; stride > 0; stride /= 2) {
+        if (i < stride) {
+            xS[i] += xS[i + stride];
+            yS[i] += yS[i + stride];
+            zS[i] += zS[i + stride];
+            sharedLxyz0[i] += sharedLxyz0[i + stride];
+            sharedLxyz1[i] += sharedLxyz1[i + stride];
+            sharedLxyz2[i] += sharedLxyz2[i + stride];
+        }
+        __syncthreads();
+    }
+    if (i < 3) { UVW[i] = 0.f; Lxyz[i] = 0.f; }
+    __syncthreads();
+    if (i == 0)
+    {
+        UVW[0] = xS[0];
+        UVW[1] = yS[0];
+        UVW[2] = zS[0];
+        Lxyz[0] = sharedLxyz0[0];
+        Lxyz[1] = sharedLxyz1[0];
+        Lxyz[2] = sharedLxyz2[0];
     }
 }
 __global__ void atomVelocity(float* d_xA, float* d_yA, float* d_zA, float* d_xA1, float* d_yA1, float* d_zA1, float* d_uA, float* d_vA, float* d_wA, float omegaX, float omegaY, float omegaZ, int M, int dt)

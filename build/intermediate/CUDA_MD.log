@@ -1,0 +1,132 @@
+﻿  Compiling CUDA source file src\solver.cu...
+  Compiling CUDA source file src\kernels.cu...
+  Compiling CUDA source file src\molecule.cu...
+  Compiling CUDA source file src\moleculeGPU.cu...
+  Compiling CUDA source file src\main.cu...
+  Compiling CUDA source file src\moleculeCPU.cu...
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu  -ewp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Users\sumi4ka\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CUDA_MD\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static -std=c++17   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -o C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\main.cu.obj "C:\Users\sumi4ka\Documents\CUDA_MD\src\main.cu" 
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu  -ewp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Users\sumi4ka\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CUDA_MD\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static -std=c++17   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -o C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\solver.cu.obj "C:\Users\sumi4ka\Documents\CUDA_MD\src\solver.cu" 
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu  -ewp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Users\sumi4ka\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CUDA_MD\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static -std=c++17   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -o C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\moleculeGPU.cu.obj "C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeGPU.cu" 
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu  -ewp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Users\sumi4ka\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CUDA_MD\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static -std=c++17   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -o C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\kernels.cu.obj "C:\Users\sumi4ka\Documents\CUDA_MD\src\kernels.cu" 
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu  -ewp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Users\sumi4ka\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CUDA_MD\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static -std=c++17   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -o C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\moleculeCPU.cu.obj "C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu" 
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu  -ewp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Users\sumi4ka\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CUDA_MD\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static -std=c++17   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -o C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\molecule.cu.obj "C:\Users\sumi4ka\Documents\CUDA_MD\src\molecule.cu" 
+  kernels.cu
+  tmpxft_00005f70_00000000-7_kernels.cudafe1.cpp
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(3): warning #177-D: variable "KB" was declared but never referenced
+    const float KB = 1.380649e-23, massA = 1.9944733e-26, sigma = 0.34;
+                ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+  moleculeGPU.cu
+  moleculeCPU.cu
+  molecule.cu
+C:\Users\sumi4ka\Documents\CUDA_MD\src\solver.cu(66): warning #550-D: variable "err" was set but never used
+            cudaError_t err;
+                        ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+  main.cu
+  tmpxft_00002698_00000000-7_moleculeGPU.cudafe1.cpp
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeGPU.cu(56): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeGPU.cu(72): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeGPU.cu(72): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeGPU.cu(72): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  tmpxft_00001e9c_00000000-7_moleculeCPU.cudafe1.cpp
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(3): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(3): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(3): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(4): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(127): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(127): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\sumi4ka\Documents\CUDA_MD\src\moleculeCPU.cu(127): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  solver.cu
+  tmpxft_00000cf8_00000000-7_molecule.cudafe1.cpp
+  tmpxft_00004a14_00000000-7_main.cudafe1.cpp
+  tmpxft_00006468_00000000-7_solver.cudafe1.cpp
+  
+  C:\Users\sumi4ka\Documents\CUDA_MD>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -dlink  -o C:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\CUDA_MD.device-link.obj -Xcompiler "/EHsc /W3 /nologo /O2   /MD " -Xcompiler "/FdC:\Users\sumi4ka\Documents\CUDA_MD\build\intermediate\vc143.pdb" -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin/crt" -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64" -L"C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib" -L"C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\manual-link" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib cudadevrt.lib "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\abseil_dll.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_decode_rust_punycode.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_demangle_rust.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag_internal.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_config.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_internal.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_marshalling.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_parse.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_private_handle_accessor.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_program_name.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_reflection.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_usage.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_flags_usage_internal.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_log_flags.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_poison.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\absl_utf8_for_code_point.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\flatbuffers.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\jpeg.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libpng16.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libprotobuf-lite.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libprotobuf.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libprotoc.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libsharpyuv.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libwebp.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libwebpdecoder.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libwebpdemux.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\libwebpmux.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\lzma.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_core4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_flann4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_ml4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_photo4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_video4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\quirc.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\tiff.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\turbojpeg.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\utf8_range.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\utf8_validity.lib" "C:\Users\sumi4ka\vcpkg\installed\x64-windows\lib\zlib.lib"  -gencode=arch=compute_86,code=sm_86   C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\kernels.cu.obj C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\main.cu.obj C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\molecule.cu.obj C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\moleculeCPU.cu.obj C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\moleculeGPU.cu.obj C:\Users\sumi4ka\Documents\CUDA_MD\\build\intermediate\solver.cu.obj 
+  cudart_static.lib
+  kernel32.lib
+  user32.lib
+  gdi32.lib
+  winspool.lib
+  comdlg32.lib
+  advapi32.lib
+  shell32.lib
+  ole32.lib
+  oleaut32.lib
+  uuid.lib
+  odbc32.lib
+  odbccp32.lib
+  cudart.lib
+  cudadevrt.lib
+  abseil_dll.lib
+  absl_decode_rust_punycode.lib
+  absl_demangle_rust.lib
+  absl_flags_commandlineflag.lib
+  absl_flags_commandlineflag_internal.lib
+  absl_flags_config.lib
+  absl_flags_internal.lib
+  absl_flags_marshalling.lib
+  absl_flags_parse.lib
+  absl_flags_private_handle_accessor.lib
+  absl_flags_program_name.lib
+  absl_flags_reflection.lib
+  absl_flags_usage.lib
+  absl_flags_usage_internal.lib
+  absl_log_flags.lib
+  absl_poison.lib
+  absl_utf8_for_code_point.lib
+  flatbuffers.lib
+  jpeg.lib
+  libpng16.lib
+  libprotobuf-lite.lib
+  libprotobuf.lib
+  libprotoc.lib
+  libsharpyuv.lib
+  libwebp.lib
+  libwebpdecoder.lib
+  libwebpdemux.lib
+  libwebpmux.lib
+  lzma.lib
+  opencv_calib3d4.lib
+  opencv_core4.lib
+  opencv_dnn4.lib
+  opencv_features2d4.lib
+  opencv_flann4.lib
+  opencv_highgui4.lib
+  opencv_imgcodecs4.lib
+  opencv_imgproc4.lib
+  opencv_ml4.lib
+  opencv_objdetect4.lib
+  opencv_photo4.lib
+  opencv_stitching4.lib
+  opencv_video4.lib
+  opencv_videoio4.lib
+  quirc.lib
+  tiff.lib
+  turbojpeg.lib
+  utf8_range.lib
+  utf8_validity.lib
+  zlib.lib
+  kernels.cu.obj
+  main.cu.obj
+  molecule.cu.obj
+  moleculeCPU.cu.obj
+  moleculeGPU.cu.obj
+  solver.cu.obj
+LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/LTCG"
+     Создается библиотека C:\Users\sumi4ka\Documents\CUDA_MD\build\CUDA_MD.lib и объект C:\Users\sumi4ka\Documents\CUDA_MD\build\CUDA_MD.exp
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+  LINK : указан параметр /LTCG, но не требуется создание кода; удалите /LTCG из командной строки компоновки для повышения производительности компоновщика
+  CUDA_MD.vcxproj -> C:\Users\sumi4ka\Documents\CUDA_MD\build\CUDA_MD.exe
+  "pwsh.exe" не является внутренней или внешней
+  командой, исполняемой программой или пакетным файлом.
