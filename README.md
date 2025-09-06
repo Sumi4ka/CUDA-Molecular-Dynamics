@@ -23,4 +23,4 @@ This solution is implemented in C#, but this solution uses CUDA C++ to implement
   cd CUDA-Molecular-Dynamics
   nvcc -arch=sm_86 -O3 -std=c++17 -I./include src/main.cu src/solver.cu src/molecule.cu src/moleculeCPU.cu src/moleculeGPU.cu src/kernels.cu -o build/CUDA_MD
 - To run the program: run DescriptionScript.bat or any else. Or run the build/CUDA_MD.exe
-- Or work with VS (run .sln)
+- Or work with VS (run .sln). NOTE: The CUDA_MD.vcxproj file contains CUDA paths for version 12.6, so you should change "CUDA 12.6.props" and "CUDA 12.6.targets" values ​​to the desired ones if necessary
